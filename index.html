@@ -23,29 +23,36 @@
 
     <!-- Custom styles for this template -->
     <link href="css/agency.min.css" rel="stylesheet">
-  </head>
+    <link href="css/agency.css" rel="stylesheet">
 
-  <script type="text/javascript">
-    $(function () {
-      var filterList = {
-        init: function() {
-          //MixItUp plugin
-          //http://mixitup.io
-          $('#portfolioList').mixItUp({
-            selectors: {
-              target: '.portfolio',
-              filter: '.filter'
-            },
-            load: {
-              filter: '.physicalInteraction' // show physical interaction tab on first load
-            }
-          });
-        }
-      };
-      // run the show!
-      filterList.init();
-    });
-  </script>
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+    <![endif]-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
+    <script type="text/javascript">
+      $(function () {
+        var filterList = {
+          init: function() {
+            //MixItUp plugin
+            //http://mixitup.io
+            $('#portfolioList').mixItUp({
+              selectors: {
+                target: '.portfolio',
+                filter: '.filter'
+              },
+              load: {
+                filter: '.physicalInteraction' // show physical interaction tab on first load
+              }
+            });
+          }
+        };
+        // run the show!
+        filterList.init();
+      });
+    </script>
+  </head>
 
   <body id="page-top">
     <!-- Navigation -->
@@ -98,27 +105,30 @@
         </div>
     </section>
 
-    <ul id="filters" class="clearfix">
-      <li><span class="filter active" data-filter=".sensor, .physicalInteraction">All</span></li>
-      <li><span class="filter" data-filter=".sensor">Sensor</span></li>
-      <li><span class="filter" data-filter=".physicalInteraction">Physical Interaction</span></li>
-    </ul>
+    <div class="container">
 
-    <div id="portfolioList">
-      <div class="portfolio logo" data-cat="physicalInteraction">
-        <div class="portfolio-wrapper">
-          <img src="img/logos/themeforest.jpg" alt="" />
-          <div class="label">
-            <div class="label-text">
-              <a class="text-title">Event Map</a>
-              <span class="text-category">Physical Interaction</span>
+      <ul id="filters" class="clearfix">
+        <li><span class="filter active" data-filter=".sensor, .physicalInteraction">All</span></li>
+        <li><span class="filter" data-filter=".sensor">Sensor</span></li>
+        <li><span class="filter" data-filter=".physicalInteraction">Physical Interaction</span></li>
+      </ul>
+
+      <div id="portfolioList">
+        <div class="portfolio physicalInteraction" data-cat="physicalInteraction">
+          <div class="portfolio-wrapper">
+            <img src="img/logos/themeforest.jpg" alt="" />
+            <div class="label">
+              <div class="label-text">
+                <a class="text-title">Event Map</a>
+                <span class="text-category">Physical Interaction</span>
+              </div>
+              <div class="label-bg"> </div>
             </div>
-            <div class="label-bg"> </div>
           </div>
         </div>
       </div>
-    </div>
 
+    </div>
 
     <!-- Services -->
  <!--    <section id="services">
