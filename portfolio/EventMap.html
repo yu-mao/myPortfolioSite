@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>EventMap</title>
 <link rel="icon" type="image/ico" href="img/img_about/faviconjiayao.png"/>
-<link type="text/css" rel="stylesheet" href="css/05_tastebuds.css" />
+<link type="text/css" rel="stylesheet" href="css/05_EventMap.css" />
 <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Merriweather:300italic,300,400italic,400,700italic,700,900italic,900' rel="stylesheet" type="text/css">
@@ -26,57 +26,54 @@ cursor:pointer;
 opacity:0.7;	
 }  
 </style>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-47257167-1', 'wennizhou.com');
-  ga('send', 'pageview');
-</script>
+<!-- google analytics here -->
 	
 </head>
 
 
 <body>
-<!--
-   {}}}}}}} {}    {}   {}{}   {}    {} {}  {}  {}}}}}       {}}}}}  {}}}}}   {}}}}}
-      {}    {}    {}  {}  {}  {}}}  {} {} {}  {}            {}     {}    {}  {}   {}
-      {}    {}{{}}{} {}{{}}{} {} {} {} {}}}    {{{{{}       {}}}}  {}    {}  {}}}}}
-      {}    {}    {} {}    {} {}  {{{} {} {}        {}      {}     {}    {}  {}  {}
-      {}    {}    {} {}    {} {}    {} {}  {}  {}}}}}       {}      {}}}}}   {}   {}
-      
-    
-    {}}}}}   {}}}}}  {}      {}  {}  {}    {}  {}}}}}       {}}}}}}}  {}}}}}
-   {}    {} {}    {} {}}}  {{{}  {}  {}}}  {} {}    {}         {}    {}    {} 
-   {}       {}    {} {} {{}} {}  {}  {} {} {} {}               {}    {}    {} 
-   {}    {} {}    {} {}  {}  {}  {}  {}  {{{} {}  {{{{         {}    {}    {} 
-    {}}}}}   {}}}}}  {}      {}  {}  {}    {}  {}}}}}          {}     {}}}}}
- 
-    
-   {}      {}  {}}}}}  {}    {}  {}    {}   {}  }}  {}}}}}
-   {}  {}  {}  {}      {}}}  {}  {}}}  {}   {}  }  {}
-   {} {{}} {}  {}}}}   {} {} {}  {} {} {}   {}      {{{{{}
-   {}}}  {{{}  {}      {}  {{{}  {}  {{{}   {}           {} 
-   {}      {}  {}}}}}  {}    {}  {}    {}   {}      {}}}}}
-  
-   
-   {}      {}  {}}}}}  {}}}}}   {}}}}}   {}  {}}}}}}} {}}}}}
-   {}  {}  {}  {}      {}   {} {}        {}     {}    {}
-   {} {{}} {}  {}}}    {}}}}}   {{{{{}   {}     {}    {}}}}
-   {}}}  {{{}  {}      {}   {}       {}  {}     {}    {}
-   {}      {}  {}}}}}  {}}}}}   {}}}}}   {}     {}    {}}}}}
-
--->
+<!-- 
+d888888b db   db  .d8b.  d8b   db db   dD .d8888.      d88888b  .d88b.  d8888b. 
+`~~88~~' 88   88 d8' `8b 888o  88 88 ,8P' 88'  YP      88'     .8P  Y8. 88  `8D 
+   88    88ooo88 88ooo88 88V8o 88 88,8P   `8bo.        88ooo   88    88 88oobY' 
+   88    88~~~88 88~~~88 88 V8o88 88`8b     `Y8b.      88~~~   88    88 88`8b   
+   88    88   88 88   88 88  V888 88 `88. db   8D      88      `8b  d8' 88 `88. 
+   YP    YP   YP YP   YP VP   V8P YP   YD `8888Y'      YP       `Y88P'  88   YD 
+                                                                                
+                                                                                
+ .o88b.  .d88b.  .88b  d88. d888888b d8b   db  d888b       d888888b  .d88b.     
+d8P  Y8 .8P  Y8. 88'YbdP`88   `88'   888o  88 88' Y8b      `~~88~~' .8P  Y8.    
+8P      88    88 88  88  88    88    88V8o 88 88              88    88    88    
+8b      88    88 88  88  88    88    88 V8o88 88  ooo         88    88    88    
+Y8b  d8 `8b  d8' 88  88  88   .88.   88  V888 88. ~8~         88    `8b  d8'    
+ `Y88P'  `Y88P'  YP  YP  YP Y888888P VP   V8P  Y888P          YP     `Y88P'     
+                                                                                
+                                                                                
+   d88b d888888b  .d8b.  db    db  .d8b.   .d88b.  Cb .d8888.                   
+   `8P'   `88'   d8' `8b `8b  d8' d8' `8b .8P  Y8. `D 88'  YP                   
+    88     88    88ooo88  `8bd8'  88ooo88 88    88  ' `8bo.                     
+    88     88    88~~~88    88    88~~~88 88    88      `Y8b.                   
+db. 88    .88.   88   88    88    88   88 `8b  d8'    db   8D                   
+Y8888P  Y888888P YP   YP    YP    YP   YP  `Y88P'     `8888Y'                   
+                                                                                
+                                                                                
+db   d8b   db d88888b d8888b. .d8888. d888888b d888888b d88888b                 
+88   I8I   88 88'     88  `8D 88'  YP   `88'   `~~88~~' 88'                     
+88   I8I   88 88ooooo 88oooY' `8bo.      88       88    88ooooo                 
+Y8   I8I   88 88~~~~~ 88~~~b.   `Y8b.    88       88    88~~~~~                 
+`8b d8'8b d8' 88.     88   8D db   8D   .88.      88    88.                     
+ `8b8' `8d8'  Y88888P Y8888P' `8888Y' Y888888P    YP    Y88888P 
+-->   
 <!-- ************  Top  ************** -->      
 <div class="pagetop">
      <div id="topimg">
        <div>
-	    <img src="img/img_05_tastebuds/maintitle.png" width="300px" style="top:130px;margin-left:110px; float:left; position:absolute"/>
+	    <img src="img/img_05_EventMap/maintitle.png" width="300px" style="top:130px;margin-left:110px; float:left; position:absolute"/>
        </div>
-       <p class="subtitle">Tastebuds is an augmented reality system that helps shoppers navigate the grocery store by connecting them to the traditions, expertise of their families, friends and favorite chefs.</p>
-	   <img class="titleimage" src="img/img_05_tastebuds/verytop.png" height="500px"/>
+       <!-- <p class="subtitle">Tastebuds is an augmented reality system that helps shoppers navigate the grocery store by connecting them to the traditions, expertise of their families, friends and favorite chefs.</p> -->
+       <p class="subtitle">EventMap is an interactive table that visualizes upcoming events happening in Stockholm city.</p>
+	   <img class="titleimage" src="img/img_05_EventMap/verytop.png" height="500px"/>
      </div>
 </div>
 
