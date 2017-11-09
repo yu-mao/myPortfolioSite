@@ -20,7 +20,8 @@ z-index: 3;
 top:160px;
 display: block;
 width:982px; 
-height: 1560px;
+/*height: 1560px;*/
+height: 1000px;		/*temporary page height*/
 padding: 0px;
 position: relative;
 margin: auto;
