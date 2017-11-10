@@ -17,13 +17,16 @@ a:focus{
 	max-width: 1130px;
 }
 
+/*responsive CSS*/
+
 /*coverstory*/
 .coverstory{
 	display:block;
 	position:relative;
 	width:100%;
-	height:500px;
+	min-height:500px;
 	background: url('../img/img_eventmap/verytop.png') no-repeat center center #2e2709;	
+	background-size:cover;
 }
 
 .coverstory .caption{
@@ -59,15 +62,13 @@ a:focus{
 	display:block;
 	position:relative;
 	width:100%;
-	height:500px;
+	min-height:900px;
 	text-align: center;
-	margin:0 auto;
-	padding:100px 0;
 }
 
 .problem .caption{
 	position: absolute;
-	top:20%;
+	top:45%;
 	transform:translate(0,-50%);
 	-webkit-transform:translate(0,-50%);
 	-moz-transform:translate(0,-50%);
@@ -92,4 +93,26 @@ a:focus{
 	font-weight: 300;
 	color: #4a4a4a;
 	line-height:160%;
+}
+
+.designthinking {
+	display:block;
+	position:relative;
+	width:100%;
+	text-align:center;
+	background-color: #f5f4f3;
+}
+
+.ideabanner{
+	display:block;
+	position:relative;
+	width:100%;
+	background-color:#860579;
+}
+
+.solution{
+	display: block;
+	position:relative;
+	width:100%
+	background-color:#f5f4f3;
 }
