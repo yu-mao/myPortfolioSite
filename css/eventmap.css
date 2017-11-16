@@ -58,6 +58,7 @@ a:focus{
 	width: 400px;
 }
 
+/*problem*/
 .problem{
 	display:block;
 	position:relative;
@@ -95,6 +96,7 @@ a:focus{
 	line-height:160%;
 }
 
+/*design thinking*/
 .designthinking {
 	display:block;
 	position:relative;
@@ -103,6 +105,7 @@ a:focus{
 	background-color: #f5f4f3;
 }
 
+/*idea banner*/
 .ideabanner{
 	display:block;
 	position:relative;
@@ -110,6 +113,7 @@ a:focus{
 	background-color:#860579;
 }
 
+/*solution*/
 .solution{
 	display: block;
 	position:relative;
@@ -195,7 +199,52 @@ a:focus{
   top: 50%;
 }
 
-* {box-sizing:border-box}
+/*development*/
+.development{
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background-color: #f5f4f3;
+}
+
+/*demo*/
+.demo{
+	display:block;
+	position:relative;
+	width:100%;
+	text-align: center;
+	background-color:#f5f4f3;
+}
+
+.extLink{
+  border-bottom: 1px solid lightgrey;
+  text-decoration: none;
+}
+.extLink:link {color:#1c1c1c;font-weight: 500}    /* unvisited link */
+.extLink:visited {color:#1c1c1c;} /* visited link */
+.extLink:hover {color:#818181;}   /* mouse over link */
+.extLink:active {color:#818181;}  /* selected link */
+
+/*process*/
+.process{
+	display:block;
+	position:relative;
+	width:100%;
+	text-align: center;
+	background-color:#f5f4f3;
+}
+
+
+.hide{
+  display:none;
+}
+.showprocess{
+  cursor:pointer;
+}
+.showprocess:hover{
+  opacity:0.7;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -225,6 +274,10 @@ a:focus{
   border-radius: 0 3px 3px 0;
 }
 
+.prev{
+  left: 0;
+}
+
 /* Position the "next button" to the right */
 .next {
   right: 0;
@@ -237,7 +290,7 @@ a:focus{
 }
 
 /* Caption text */
-.text {
+.slideshowCapText {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -283,32 +336,5 @@ a:focus{
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-
-.demo{
-	display:block;
-	position:relative;
-	width:100%;
-	text-align: center;
-	background-color:#f5f4f3;
-}
-
-.process{
-	display:block;
-	position:relative;
-	width:100%;
-	text-align: center;
-	background-color:#f5f4f3;
-}
-
-
-.hide{
-  display:none;
-}
-.showprocess{
-  cursor:pointer;
-}
-.showprocess:hover{
-  opacity:0.7;
+  .prev, .next,.slideshowCapText {font-size: 11px}
 }
