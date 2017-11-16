@@ -14,18 +14,9 @@
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300italic,300,400italic,400,700italic,700,900italic,900">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <style>
-    .hide{
-      display:none;
-    }
-    .showprocess{
-      cursor:pointer;
-    }
-    .showprocess:hover{
-      opacity:0.7;
-    }
-  </style>
+
   <!-- google analytics here -->
+
 </head>
 
 <body>
@@ -68,7 +59,7 @@ Y8   I8I   88 88~~~~~ 88~~~b.   `Y8b.    88       88    88~~~~~
         <p>An interactive installation that feeds tourists incoming to Stockholm city with local event information by providing them with physical interaction and printed-out take-away.</p>
       </div>
     </div>
-  </section>>  
+  </section>  
 
   <section class="problem" id="problem">
     <div class="container">
@@ -78,44 +69,41 @@ Y8   I8I   88 88~~~~~ 88~~~b.   `Y8b.    88       88    88~~~~~
         <br>
         <!-- <hr> -->
         <br>
-        <center><img src="img/img_eventmap/fourquotes.png" alt="" style="width:85%"></center>
         </p>
+        <img src="img/img_eventmap/fourquotes.png" alt="" style="width:80%">
       </div>
     </div>
   </section>
  
  <section class="designthinking" id="designthinking">
   <div class="container">
-    <img src="img/img_eventmap/designthinking.png" alt="" style="width:100%">
+    <img src="img/img_eventmap/designthinking.png" alt="" style="width:80%">
   </div>
  </section>
 
  <section class="ideabanner" id="ideabanner">
   <div class="container">
-    <center><img src="img/img_eventmap/ideabanner.png" alt="" style="width:70%" vspace="10%"></center>
+    <center><img src="img/img_eventmap/ideabanner.png" alt="" style="width:60%" vspace="10%"></center>
   </div>
  </section>
 
  <section class="solution" id="solution">
-  <div class="container">
-    <center><img id="imgTableOverview" src="img/img_eventmap/tableoverview.png" alt="" style="width:70%"" vspace="10%"></center>
+  <div id="slideshow_cover" class="container">
+    <center><img id="imgTableOverview" src="img/img_eventmap/tableoverview.png" alt="" style="width:70%"></center>
     <center><button id="btnStartInteraction" class="btnStartInteraction" onclick="startInteraction();"><span>Start Interaction</span></center>
   </div>
-  <div class="slideshow-container">
+  <div id="slideshow_pic" class="slideshow-container">
     <div class="mySlides fade">
-      <!-- <div class="numbertext">1 / 3</div> -->
       <img src="img/img_eventmap/tableoverview.png" style="width:100%">
       <div class="text">Caption Text</div>
     </div>
 
     <div class="mySlides fade">
-      <!-- <div class="numbertext">2 / 3</div> -->
       <img src="img/img_eventmap/tableoverview.png" style="width:100%">
       <div class="text">Caption Two</div>
     </div>
 
     <div class="mySlides fade">
-      <!-- <div class="numbertext">3 / 3</div> -->
       <img src="img/img_eventmap/tableoverview.png" style="width:100%">
       <div class="text">Caption Three</div>
     </div>
@@ -125,7 +113,7 @@ Y8   I8I   88 88~~~~~ 88~~~b.   `Y8b.    88       88    88~~~~~
   </div>
   <br>
 
-  <div style="text-align:center">
+  <div id="slideshow_dot" class="slideshow-container">
     <span class="dot" onclick="currentSlide(1)"></span> 
     <span class="dot" onclick="currentSlide(2)"></span> 
     <span class="dot" onclick="currentSlide(3)"></span> 
@@ -134,24 +122,22 @@ Y8   I8I   88 88~~~~~ 88~~~b.   `Y8b.    88       88    88~~~~~
 
  <script>
   function startInteraction(){
-    var img = document.getElementById("imgTableOverview");
-    var btn = document.getElementById("btnStartInteraction");
-    img.remove();
-    btn.remove();
-    return false;
+    var slideshow_cover = document.getElementById("slideshow_cover");
+    var slidesow_pic = document.getElementById("slideshow_pic");
+    var slideshow_dot = document.getElementById("slideshow_dot"); 
+    slideshow_cover.style.display = "none";
+    slideshow_pic.style.display = "block";
+    slideshow_dot.style.display = "block";
   }
 
   var slideIndex = 1;
   showSlides(slideIndex);
-
   function plusSlides(n) {
     showSlides(slideIndex += n);
   }
-
   function currentSlide(n) {
     showSlides(slideIndex = n);
   }
-
   function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
