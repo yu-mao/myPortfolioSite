@@ -116,3 +116,19 @@ a:focus{
 	width:100%
 	background-color:#f5f4f3;
 }
+
+.demo{
+	display:block;
+	position:relative;
+	width:100%;
+	text-align: center;
+	background-color:#f5f4f3;
+}
+
+.process{
+	display:block;
+	position:relative;
+	width:100%;
+	text-align: center;
+	background-color:#f5f4f3;
+}
