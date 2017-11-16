@@ -98,9 +98,62 @@ Y8   I8I   88 88~~~~~ 88~~~b.   `Y8b.    88       88    88~~~~~
 
  <section class="solution" id="solution">
   <div class="container">
-    <center><img src="img/img_eventmap/tableoverview.png" alt="" style="width:70%"" vspace="10%"></center>
+    <center><img id="tableoverview" src="img/img_eventmap/tableoverview.png" alt="" style="width:70%"" vspace="10%"></center>
+    <center><button class="btnStartInteraction" onclick="startInteraction();"><span>Start Interaction</span></center>
+  </div>
+  <div class="container">
+    <div class="solutionSlides fade">
+      <img src="img/img_eventmap/5.jpg" style="width:100%">
+      <div class="capText">Caption Text 1</div>
+    </div>
+    <div class="solutionSlides fade">
+      <img src="img/img_eventmap/6.jpg" style="width: 100%">
+      <div class="capText">Caption Text 2</div>
+    </div>
+    <a class="btnPrev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="btnNext" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align: center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
   </div>
  </section>
+
+ <script>
+  function startInteraction(){
+    var img = document.getElementById("tableoverview");
+    img.src = "img/img_eventmap/Solution_placeholder.png";
+    return false;
+  }
+
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n){
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n){
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n){
+    var i;
+    var slides=document.getElementByClassName("solutionSlides");
+    var dots=document.getElementByClassName("dot");
+    if (n>slides.length){slideIndex=1}
+    if (n<1){slideIndex=slides.length}
+    for (i=0;o<slides.length;i++){
+      slides[i].style.display="none";
+    }
+    for (i=0;i<dots.length;i++){
+      dots[i].className=dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display="block";
+    dots[slideIndex-1].className += " active";
+  }
+ </script>
 
  <section class="demo" id="demo">
   <div class="container">
