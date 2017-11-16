@@ -205,9 +205,9 @@ a:focus{
   display: none;
 }
 
-.mySlides {
-	display: block;
-}
+/*.mySlides {
+	display: none;
+}*/
 
 /* Next & previous buttons */
 .prev, .next {
@@ -248,7 +248,6 @@ a:focus{
 
 /* The dots/bullets/indicators */
 .dot {
-	display: none;
   cursor:pointer;
   height: 15px;
   width: 15px;
