@@ -232,7 +232,7 @@ a:focus{
 	position:relative;
 	width:100%;
 	text-align: center;
-	background-color:#f5f4f3;
+	background-color:#2d2e31;
 }
 
 
@@ -244,6 +244,42 @@ a:focus{
 }
 .showprocess:hover{
   opacity:0.7;
+}
+
+.footer{
+  width:100%;
+  /*height:140px;*/
+  padding-left:10%;
+  position:relative;
+  z-index:3;
+  font-size: 0.8em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #000;
+  line-height: 160%;
+  letter-spacing: 0.05em;  
+}
+
+.disclaimer{
+  width:80%;
+}
+
+.scrollup{
+  cursor: pointer;
+  position: relative;
+  float: left;
+  z-index: 3;
+  font-size: 0.7em;
+  font-weight: 300;
+  color: #000;
+  line-height:160%;
+  -webkit-font-smoothing: antialiased;  
+  font-family: 'Merriweather', Georgia, "Times New Roman", Times, serif;
+  color: #4f4640;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  vertical-align: text-top;
+  color: #7b7b7b;
 }
 
 /* Slideshow container */
