@@ -75,7 +75,7 @@ Y8   I8I   88 88~~~~~ 88~~~b.   `Y8b.    88       88    88~~~~~
         <!-- <hr> -->
         <br>
         </p>
-        <img src="img/img_eventmap/fourquotes.png" alt="" style="width:80%">
+        <img src="img/img_eventmap/fourquotes.png" alt="" style="width:80%"/>
       </div>
     </div>
   </section>
@@ -94,39 +94,31 @@ Y8   I8I   88 88~~~~~ 88~~~b.   `Y8b.    88       88    88~~~~~
 
  <section class="solution" id="solution">
   <div id="slideshow_cover" class="container">
-    <center><img id="imgTableOverview" src="img/img_eventmap/interaction0.png" alt="" style="width:80%"></center>
-    <center><button id="btnStartInteraction" class="btnStartInteraction" onclick="startInteraction();"><span>Start Interaction</span></center>
+    <center><img id="imgTableOverview" src="img/img_eventmap/interaction0.png" alt="" style="width:80%"/></center>
+    <center><button id="btnStartInteraction" class="btnStartInteraction" onclick="startInteraction();"><span>Start Interaction</span></button></center>
   </div>
   <div id="slideshow_pic" class="slideshow-container">
     <div class="mySlides fade">
       <img src="img/img_eventmap/interaction1.png" style="width:100%">
       <!-- <div class="slideshowCapText">Caption Text</div> -->
     </div>
-
     <div class="mySlides fade">
       <img src="img/img_eventmap/interaction2.png" style="width:100%">
       <!-- <div class="slideshowCapText">Caption Two</div> -->
     </div>
-
     <div class="mySlides fade">
       <img src="img/img_eventmap/interaction3.png" style="width:100%">
       <!-- <div class="slideshowCapText">Caption Three</div> -->
     </div>
-
-    <div class="mySlides fade">
-      <img src="img/img_eventmap/interaction4.png" style="width:100%">
-      <!-- <div class="slideshowCapText">Caption Three</div> -->
-    </div>
-
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <br>
-
   <div id="slideshow_dot" class="slideshow-container">
     <span class="dot" onclick="currentSlide(1)"></span> 
     <span class="dot" onclick="currentSlide(2)"></span> 
     <span class="dot" onclick="currentSlide(3)"></span> 
+    <center><button id="btnStartInteraction" class="btnStartInteraction" onclick="plusSlides(1);"><span>Next</span></button></center>
   </div>
  </section>
 
@@ -165,44 +157,43 @@ Y8   I8I   88 88~~~~~ 88~~~b.   `Y8b.    88       88    88~~~~~
   }
  </script>
 
- <section id="development" class="development">
+ <section id="controlFlow" class="controlFlow">
   <div class="container">
     <div class="caption">
-      <h1>Development</h1>
-      <p>Arduino, Raspberry Pi, ...</p>
+      <h1>Control Flow</h1>
+      <p>We give user control over the date, event type and location of an event through the rotatable outer dial of the map, the color of the LEDs and buttons under the buildings. The outer dial is connected to a rotary encoder which senses discrete stops of rotation. We use this rotation as an input to change the day for which event information is shown. The color of the LEDs represents the type of event that is taking place. The buildings act as buttons. Users can press them which activates the printer to print out the date and location to remind the user when and where this event is taking place. These inputs get processed by an Arduino which communicates with the Raspberry Pi that retrieves JSON data regarding events from an event website.</p>
       <br>
       <br>
       <img src="img/img_eventmap/development.png" alt="" style="width:80%">
+      <br>
+      <br>
+      <p>Checkout project code in our <a class="extLink" href="https://github.com/AndreJSON/interactive-map" target="_blank">GitHub repo </a><span>></span></p>
+      <p>We submited our project to <a class="extLink" href="https://tei.acm.org/2018/student-design-challenge/" target="_blank">ACM TEI 2018 Student Design Challenge </a><span>></span></p>
+      <br>
+      <br>
+      <iframe src="https://player.vimeo.com/video/241496457?loop=1" width="768" height="432" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="top:50px"></iframe>
     </div>
-  </div>
- </section>
-
- <section class="demo" id="demo">
-  <div class="container">
-    <iframe src="https://player.vimeo.com/video/241496457?loop=1" width="768" height="432" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    <p>Checkout project code in our <a class="extLink" href="https://github.com/AndreJSON/interactive-map" target="_blank">GirHub repo </a><span>></span></p>
-    <p>We submited our project to <a class="extLink" href="https://tei.acm.org/2018/student-design-challenge/" target="_blank">ACM TEI 2018 Student Design Challenge </a><span></span></p>
   </div>
  </section>
 
  <section class="process hide toggle" style="background-color:#2d2e31">
-  <h1 style="top:120px;left:20px;color:#b1b1b3;line-height:140%;position:relative;">Process & <br>Iterations</h1>
-      <p style="top:150px;left:20px;color:#b1b1b3;position:relative;float:left;z-index:3;font-family: 'Open Sans',sans-serif;font-weight:300;color:#ffffff;line-height:160%;">Sensor Exploration<br>Trail & Error<br>Limited Arduino Pins<br>Tricky NeoPixel LEDs<br>Put Everything Together<br>Video Shooting<br>Table Releasement</p>
-    <div class="fotorama" style="background-color:#2d2e31; margin-top:-40px;margin-bottom:30px;right:30px" data-width="676" data-ratio="676/524" data-max-width="100%" data-loop="true" data-arrows="true" data-click="true" data-swipe="false">
-      <img src="img/img_eventmap/process1.jpg" style="width:50%">
-      <img src="img/img_eventmap/process2.jpg" style="width:50%">
-      <img src="img/img_eventmap/process3.jpg" style="width:50%">
-      <img src="img/img_eventmap/process4.jpg" style="width:50%">
-      <img src="img/img_eventmap/process5.jpg" style="width:50%">
-      <img src="img/img_eventmap/process6.jpg" style="width:50%"> 
-      <img src="img/img_eventmap/process7.jpg" style="width:50%">  
-    </div>
+    <h1 style="top:20px;left:100px;color:#b1b1b3;line-height:140%;position:relative">Process & <br>Iterations</h1>
+    <p style="top:150px;left:100px;color:#b1b1b3;position:relative;float:left;z-index:3;font-family: 'Open Sans',sans-serif;font-weight:300;color:#ffffff;line-height:160%;">Sensor Exploration<br>Trail & Error<br>Limited Arduino Pins<br>Tricky NeoPixel LEDs<br>Put Everything Together<br>Video Shooting<br>Table Releasement</p>
+  <div class="fotorama" style="background-color:#2d2e31; margin-top:-40px;margin-bottom:30px; margin-left: 500px; right:30px;" data-width="676" data-ratio="676/524" data-max-width="100%" data-loop="true" data-arrows="true" data-click="true" data-swipe="false">
+    <img src="img/img_eventmap/process1.jpg" style="width:50%;">
+    <img src="img/img_eventmap/process2.jpg" style="width:50%">
+    <img src="img/img_eventmap/process3.jpg" style="width:50%">
+    <img src="img/img_eventmap/process4.jpg" style="width:50%">
+    <img src="img/img_eventmap/process5.jpg" style="width:50%">
+    <img src="img/img_eventmap/process6.jpg" style="width:50%"> 
+    <img src="img/img_eventmap/process7.jpg" style="width:50%">  
+  </div>
 </section>
 
 <footer>
-  <div class="footer showprocess"><img src="img/viewprocess.png" width="100"/></div>
-  <p class="footer disclaimer"> Work presented by me, Nicolaas Peter Bijman, Andre Josefsson and Jim Tolman in 8 weeks | Sept. - Oct. 2017<br> Project completed in the course “Physical Interaction Design” under the instruction of Mattias Jacobsson and Jordi Solsona Belenguer</p>
-  <p class="footer scrollup">BACK TO TOP ↑</p>
+  <div class="footer showprocess" style="top:20px"><img src="img/viewprocess.png" width="100"/></div>
+  <p class="footer disclaimer" style="top:20px"> Work presented by me, Nicolaas Peter Bijman, Andre Josefsson and Jim Tolman in 8 weeks | Sept. - Oct. 2017<br> Project completed in the course “Physical Interaction Design” under the instruction of Mattias Jacobsson and Jordi Solsona Belenguer</p>
+  <p class="footer scrollup" style="top:20px">BACK TO TOP ↑</p>
 </footer>
 
 <script>

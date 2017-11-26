@@ -3,149 +3,140 @@
 
 /*general CSS*/
 body{
-	background: #faf9f9;
-	padding: 0px;
-	margin: 0px;
+  background: #faf9f9;
+  padding: 0px;
+  margin: 0px;
 }
 
 a:focus{
-	color: #fff!important;
-	text-decoration: none!important;
+  color: #fff!important;
+  text-decoration: none!important;
 }
 
 .container{
-	max-width: 1920px;
+  max-width: 1920px;
 }
 
 /*responsive CSS*/
 
 /*coverstory*/
 .coverstory{
-	display: block;
-	position: relative;
-	width:100%;
-	min-height:500px;
-	background: url('../img/img_eventmap/verytop.png') no-repeat center center #2e2709;	
-	background-size:cover;
+  display: block;
+  position: relative;
+  width:100%;
+  min-height:500px;
+  background: url('../img/img_eventmap/verytop.png') no-repeat center center #2e2709; 
+  background-size:cover;
 }
 
 .coverstory .caption{
-	top:50%;
-	left:120px;
-	position: absolute;	
-	transform:translate(0,-50%);
-	-webkit-transform:translate(0,-50%);
-	-moz-transform:translate(0,-50%);
-	-o-transform:translate(0,-50%);
+  top:50%;
+  left:120px;
+  position: absolute; 
+  transform:translate(0,-50%);
+  -webkit-transform:translate(0,-50%);
+  -moz-transform:translate(0,-50%);
+  -o-transform:translate(0,-50%);
 }
 
 .coverstory .caption h1{
-	font-size: 3em;
-	color:#ffffff;
-	font-weight: 600; 
-	font-family: 'Roboto Slab', serif;
-	letter-spacing:1px;
+  font-size: 3em;
+  color:#ffffff;
+  font-weight: 600; 
+  font-family: 'Roboto Slab', serif;
+  letter-spacing:1px;
 }
 
 .coverstory .caption p{
-	font-size: 1.3em;
-	color:#ffffff;
-	font-family: 'Open Sans', sans-serif;
-	line-height: 160%;
-	text-decoration: none;
-	top:200px;
-	left:120px;
-	width: 400px;
+  font-size: 1.3em;
+  color:#ffffff;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 160%;
+  text-decoration: none;
+  top:200px;
+  left:120px;
+  width: 400px;
 }
 
 /*problem*/
 .problem{
-	display:block;
-	position:relative;
-	width:100%;
-	min-height:900px;
-	text-align: center;
+  display:block;
+  position:relative;
+  width:100%;
+  min-height:900px;
+  text-align: center;
 }
 
 .problem .caption{
-	position: absolute;
-	top:45%;
-	transform:translate(0,-50%);
-	-webkit-transform:translate(0,-50%);
-	-moz-transform:translate(0,-50%);
-	-o-transform:translate(0,-50%);
+  position: absolute;
+  top:45%;
+  transform:translate(0,-50%);
+  -webkit-transform:translate(0,-50%);
+  -moz-transform:translate(0,-50%);
+  -o-transform:translate(0,-50%);
 }
 
 .problem .caption h1{
-	padding: 0 200px;
-	line-height: 140%;
-	font-size: 2em;
-	font-family: 'Roboto Slab', serif;
-	font-weight: 400;
+  padding: 0 200px;
+  line-height: 140%;
+  font-size: 2em;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
 }
 
 .problem .caption p{
-	padding: 0 200px;	
-	max-width: 1200px;
-	margin-bottom: 50px;
-	margin:auto;
-	z-index: 3;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
-	color: #4a4a4a;
-	line-height:160%;
+  padding: 0 200px; 
+  max-width: 1200px;
+  margin-bottom: 50px;
+  margin:auto;
+  z-index: 3;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #4a4a4a;
+  line-height:160%;
 }
 
 /*design thinking*/
 .designthinking {
-	display:block;
-	position:relative;
-	width:100%;
-	text-align:center;
-	background-color: #f5f4f3;
+  display:block;
+  position:relative;
+  width:100%;
+  text-align:center;
+  background-color: #f5f4f3;
 }
 
 /*idea banner*/
 .ideabanner{
-	display:block;
-	position:relative;
-	width:100%;
-	background-color:#860579;
+  display:block;
+  position:relative;
+  width:100%;
+  background-color:#7DBEA5;
 }
 
 /*solution*/
 .solution{
-	display: block;
-	position:relative;
-	width:100%
-	background-color:#f5f4f3;
+  display: block;
+  position:relative;
+  width:100%
+  background-color:#f5f4f3;
 }
 
 .btnStartInteraction{
   text-transform: uppercase;
-  letter-spacing: 2px;
   text-align: center;
   color: #0C5;
-
-  font-size: 24px;
+  font-size: 15px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  
-  margin: 5em auto;
-  
-  position: relative; 
-  top:0; right:0; bottom:0; left:0;
-  
-  padding: 20px 0;
-  width: 220px;
-  height:30px;
-
+  margin: 2em auto;
+  position: relative;
+  width:220px;
+  height: 50px;
   background: #0D6;
   border: 1px solid #0D6;
   color: #FFF;
   overflow: hidden;
-  
-  transition: all 0.5s;
+  transition: all 0.5s; 
 }
 
 .btnStartInteraction:hover, .btnStartInteraction:active 
@@ -161,7 +152,6 @@ a:focus{
   display: inline-block;
   position: relative;
   padding-right: 0;
-  
   transition: padding-right 0.5s;
 }
 
@@ -175,12 +165,10 @@ a:focus{
   width: 10px;
   height: 10px;
   margin-top: -10px;
-
   background: rgba(0, 0, 0, 0);
   border: 3px solid #FFF;
   border-top: none;
   border-right: none;
-
   transition: opacity 0.5s, top 0.5s, right 0.5s;
   transform: rotate(-45deg);
 }
@@ -199,22 +187,44 @@ a:focus{
   top: 50%;
 }
 
-/*development*/
-.development{
+/*control flow*/
+.controlFlow{
   display: block;
   position: relative;
   width: 100%;
-  text-align: center;
-  background-color: #f5f4f3;
+  /*text-align: center;*/
+  background-color: #f5f4f3;  
+  min-height: 1600px;
 }
 
-/*demo*/
-.demo{
-	display:block;
-	position:relative;
-	width:100%;
-	text-align: center;
-	background-color:#f5f4f3;
+.controlFlow .caption{
+  position: absolute;
+  top:45%;
+  transform:translate(0,-50%);
+  -webkit-transform:translate(0,-50%);
+  -moz-transform:translate(0,-50%);
+  -o-transform:translate(0,-50%);
+  text-align: center;
+}
+
+.controlFlow .caption h1{
+  padding: 0 200px;
+  line-height: 140%;
+  font-size: 2em;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}
+
+.controlFlow .caption p{
+  padding: 0 200px; 
+  max-width: 1500px;
+  margin-bottom: 50px;
+  margin:auto;
+  z-index: 3;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #4a4a4a;
+  line-height:160%;
 }
 
 .extLink{
@@ -228,13 +238,12 @@ a:focus{
 
 /*process*/
 .process{
-	display:block;
-	position:relative;
-	width:100%;
-	text-align: center;
-	background-color:#2d2e31;
+  display:block;
+  position:relative;
+  width:100%;
+  /*text-align: center;*/
+  background-color:#2d2e31;
 }
-
 
 .hide{
   display:none;
