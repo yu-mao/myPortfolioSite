@@ -10,10 +10,10 @@
 	<title>Jiayao Yu</title>
 	<link rel="icon" type="image/ico" href="img/faviconJiayao.png"/>
 	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 	<link type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700' rel='stylesheet'>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
-	<!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -49,49 +49,68 @@
 		</div>
 	</nav>
 
-	<section id="#projects">
-		<div class="container">
-			<div class="row">
-				<div class="col textcenter"><h4>Filter placeholder here.</h4></div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 col-sm-6">
-					<div class="front face">
-						<img src="img/img_00_thumbnails/EventMap.JPG" width="100%"/>
-					</div>
-					<div class="back face">
-						<img src="img/img_00_thumbnails/EventMap1.jpg" width="100%"/>
-					</div>
-<!-- 					<a href="EventMap.html">
-						<img src="img/img_00_thumbnails/EventMap.JPG" width="100%"/>
-					</a> -->
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<a href="SmoothPursuit.html">
-						<img src="img/img_00_thumbnails/SmoothPursuit.jpg" width="100%"/>
-					</a>
-				</div>
-				<div class="col-md-4 col-sm-6">
-					<a href="SmoothPursuit.html">
-						<img src="img/img_00_thumbnails/SmoothPursuit.jpg" width="100%"/>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
+<!--     <div class="controls">
+        <button type="button" class="control" data-filter="all">All</button>
+        <button type="button" class="control" data-filter=".green">Green</button>
+        <button type="button" class="control" data-filter=".blue">Blue</button>
+        <button type="button" class="control" data-filter=".pink">Pink</button>
+        <button type="button" class="control" data-filter="none">None</button>
+    </div>
 
+    <div class="filter-container" data-ref="filter-container">
+        <div class="mix green"></div>
+        <div class="mix green"></div>
+        <div class="mix blue"></div>
+        <div class="mix pink"></div>
+        <div class="mix green"></div>
+        <div class="mix blue"></div>
+        <div class="mix pink"></div>
+        <div class="mix blue"></div>
+
+        <div class="gap"></div>
+        <div class="gap"></div>
+        <div class="gap"></div>
+    </div> -->
+
+    <div class="filter-container" data-ref="filter-container">
+    	<div class="project-grid center" style="position: absolute; display: block;" data-cat="natural">
+			<a href="EventMap.html">
+				<img src="img/img_00_thumbnails/EventMap.png" width="100%"/>
+			</a>
+		</div>
+		<div class="project-grid-hover center" style="position: absolute; display: block;">
+			<img src="img/img_00_thumbnails/EventMap1.png" width="100%"/>
+		</div>
+    </div>
 
 <footer class="footer textcenter">
 	<div class="container">
-		<span class="text-muted">Copyright @ 2018 Jiayao Yu. All Rights Reserved.</span>
+		<span class="text-muted">Copyright © 2018 Jiayao Yu. All Rights Reserved.</span>
 	</div>
 	</footer>
 
-
-    <!-- Bootstrap JS -->
+    <!-- Bootstrap JS
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- projects grid filter plugin -->
+    <script src="js/patrickkunka-mixitup-43f2668/dist/mixitup.min.js"></script>
+
+    <script>
+        var container = document.querySelector('[data-ref="filter-container"]');
+        var mixer = mixitup(container, {
+    //     	selectors: {
+				// target: '.project-grid',
+				// filter: '.filter'	
+  		//   	},
+            animation: {
+                duration: 350
+            },
+            load: {
+    		  filter: '.green' // show green tab on first load
+    		} 
+        });
+    </script>
 
 	</body>
 
