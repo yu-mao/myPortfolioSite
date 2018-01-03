@@ -107,6 +107,29 @@ html body{
 	transition: opacity .3s ease-in-out;
 }
 
+.contact {
+	margin-top:10px;
+	position:realtive;
+	font-family:"Courier New", Courier, mono;
+	line-height: 150%;
+	font-size: 15px;
+	color: #373737;
+}
+
+.expo{
+	border-bottom: 1px solid lightgrey;
+	text-decoration: none;
+}
+
+.elsewhere {
+	margin-top:10px;
+	position:realtive;
+	font-family:"Courier New", Courier, mono;
+	line-height: 150%;
+	font-size: 15px;
+	color: #373737;
+}
+
 .footer {
 	position: absolute;
 	bottom: 20px;
