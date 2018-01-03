@@ -1,3 +1,85 @@
 @charset "UTF-8";
 @import "reset.css";
 
+.hide {
+	display: none;
+}
+
+.center {
+	margin: auto;
+	text-align: center;
+}
+
+.showprocess {
+	cursor: pointer;
+}
+
+	.showprocess:hover {
+		opacity: 0.7;
+	}
+
+.nutshell {
+	background-color: #b1a73c;
+}
+
+	.nutshell h1 {
+		font-size: 3em;
+		color:#000;
+		font-weight: 600; 
+		font-family: 'Roboto Slab', serif;
+		letter-spacing:1px;
+		display: block;
+	}
+
+	.nutshell p {
+		position: relative;	
+		padding: 0px;
+		margin: auto;
+		z-index: 3;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #4a4a4a;
+		line-height:160%;
+		display: block;
+	}
+
+.stage {
+	padding: 20px 10px 20px 10px;
+	display: block;
+}
+
+	.stage h1 {
+		font-family: 'Roboto Slab', serif;
+		line-height: 1.2em;
+		position: relative;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.stage h2 {
+		position: relative;
+		padding-bottom: 15px;
+		margin: auto;
+		z-index: 3;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 500;
+		color: #4a4a4a;
+		line-height:160%;
+		font-size: 20px;
+	}
+
+	.stage p {
+		position: relative;
+		padding-bottom: 15px;
+		margin: auto;
+		z-index: 3;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 350;
+		color: #4a4a4a;
+		line-height:160%;
+		font-size: 14px;
+	}
+
+.solution {
+	
+}
