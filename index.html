@@ -41,38 +41,15 @@
 			</div>
 			<div id="navbar" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#projects">Projects</a></li>
 					<li><a href="#nutshell">Nutshell</a></li>
+                    <li class="active"><a href="#projects">Projects</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
-<!--     <div class="controls">
-        <button type="button" class="control" data-filter="all">All</button>
-        <button type="button" class="control" data-filter=".green">Green</button>
-        <button type="button" class="control" data-filter=".blue">Blue</button>
-        <button type="button" class="control" data-filter=".pink">Pink</button>
-        <button type="button" class="control" data-filter="none">None</button>
-    </div>
-
-    <div class="filter-container" data-ref="filter-container">
-        <div class="mix green"></div>
-        <div class="mix green"></div>
-        <div class="mix blue"></div>
-        <div class="mix pink"></div>
-        <div class="mix green"></div>
-        <div class="mix blue"></div>
-        <div class="mix pink"></div>
-        <div class="mix blue"></div>
-
-        <div class="gap"></div>
-        <div class="gap"></div>
-        <div class="gap"></div>
-    </div> -->
-
-    <section id="#top-banner" class="top-banner">
+    <section id="#nutshell" class="nutshell">
     </section>
 
     <section id="#projects" class="projects">
@@ -80,14 +57,19 @@
             <div class="row">
                 <div class="col-lg-12 textcenter">
                     <h2>Projects</h2>
+                    <img src="img/dotSeparator.png" width="100%" />
                 </div>
             </div>
 
-            <ul id="filters" class="filters">
-                <button data-filter=".user, .natural">All</button>
-                <button data-filter=".user">User Modelling</button>
-                <button data-filter=".natural">Natural UI Design</button>
-            </ul>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="filters" class="filters">
+                        <button autofocus data-filter=".user, .natural">All</button>
+                        <button data-filter=".user">User Modelling</button>
+                        <button data-filter=".natural">Natural UI Design</button>
+                    </div>
+                </div>
+            </div>
 
             <div class="filter-container" data-ref="filter-container">
                 <div class="container mix natural green">
