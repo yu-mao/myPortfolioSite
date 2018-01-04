@@ -16,13 +16,57 @@
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- image carousel -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+  <style type="text/css">
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 50%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+  </style>
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
 	<![endif]-->
+	<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 
 	<!-- google analytics here -->
 
@@ -37,7 +81,7 @@
 					<p style="margin-top: 10%; margin-left: 20%">Eye tracking calibration for public displays.</p>
 				</div>
 				<div class="col-xs-7">
-					<img style="margin: 5%" src="img/img_smoothpursuit/eyeTracker.png" alt="" width="80%" />
+					<img style="margin: 5%" src="img/img_smoothpursuit/nutshell.png" alt="" width="80%" />
 				</div>
 			</div>
 		</div>
@@ -65,11 +109,11 @@
 	</div>
 
 	<div id="#analysis" class="analysis">
-		<div class="container center">
+		<div class="container">
 			<div class="row">
 			</div>
 			<img src="img/dotSeparator.png" alt="" width="100%" style="margin-top: 5px; margin-bottom: 30px" />
-			<img src="img/img_smoothpursuit/designAnalysis.png" alt="" width="100%" style="margin-bottom: 50px"/>
+			<img src="img/img_smoothpursuit/designAnalysis.png" alt="" width="100%" style="margin-bottom: 30px"/>
 		</div>
 	</div>
 
@@ -78,44 +122,16 @@
 			<h1 style="margin-top: 30px">Smooth Pursuit Calibration</h1>
 			<p>Calibrate audience gaze on public displays in real-time and non-intrusively using smooth pursuit eye movement.</p>
 			<img src="img/img_smoothpursuit/solution.png" alt="" width="80%" style="margin-top: 20px;margin-bottom: 20px" />
-			<div class="lazy slider results" data-sizes="50vw">
-				<div>
-					<img src="img/img_smoothpursuit/solution1.png">
-				</div>
-				<div>
-					<img src="img/img_smoothpursuit/solution2.png">
-				</div>
-			</div>
-			<p>I pre-define the trajectory of front-end moving object driven by system-wise time, after I stream gaze point in backend using eye tracker, I match gaze points with associated object positions by synchronizing with system-wise time to compute correlation. Once correlation goes above pre-defined threshold in certain time intervals, namely the gaze of test subject follows the movement of the object at that time, then I have this two streams within those time intervals as calibration reference, calibrate the following gaze using pinhole projection model and homography matrix in OpenCV.</p>
+		</div>
+		<div class="lazy slider" data-sizes="100vw">
+			<div><img data-lazy="img/img_smoothpursuit/solution1.png" data-srcset="img/img_smoothpursuit/solution1.png" data-sizes="100vw"></div>
+			<div><img data-lazy="img/img_smoothpursuit/solution2.png" data-srcset="img/img_smoothpursuit/solution2.png" data-sizes="100vw"></div>
 		</div>
 	</div>
 
-	<div id="#results" class="results">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-4">
-					<img src="img/img_smoothpursuit/Results_X.PNG" alt="" width="100%"/>
-				</div>
-				<div class="col-xs-4">
-					<img src="img/img_smoothpursuit/Results_Y.PNG" alt="" width="100%"/>
-				</div>
-				<div class="col-xs-4">
-					<img src="img/img_smoothpursuit/sampleFreq.PNG" alt="" width="100%"/>
-				</div>
-			</div>
-			<div class="row center">
-				<button><a href="https://goo.gl/aS7rVC" target="_blank">Code on GitHub</a></button>
-				<button><a href="pdf/calibrate-audience-gaze.pdf" target="_blank">Academic Paper</a></button>
-			</div>
-		</div>
-	</div>
 
-	<div id="#summary" class="summary">
-	</div> 
 
-	<!-- for process pics -->
-
-<!--   <section class="vertical-center slider">
+  <section class="vertical-center slider">
     <div>
       <img src="http://placehold.it/350x100?text=1">
     </div>
@@ -146,73 +162,36 @@
     <div>
       <img src="http://placehold.it/350x100?text=10">
     </div>
-  </section> -->
+  </section>
 
-		<footer class="colophon" >
-			<div class="container">
-				<div class="row" style="margin-top: 30px">
-					<div class="col-xs-2">
-						<figure id="backhome"  width="60" height="60">
-							<a href="index.html"><img src="img/faviconJiayao.png" width="60"/></a>
-					 	</figure>
-					</div>
-					<div class="col-xs-7">
-						<p> Work presented by me in 8 weeks | Apr. 2017 <br> Calibration developed with C in Visual Studio, design candidates designed with Unity3d <br> Project completed in the course “Research Project in Human-Computer Interaction” under the instruction of Antti Oulasvirta</p>
-						<p id="backtotop" class="scrollup">Back to top ↑</p>
-					</div>
-					<div class="col-xs-3 showprocess">
-						<img src="img/viewprocess.png" width="100"/>
-					</div>
-				</div>
-			</div>
-		</footer>
+<!-- 	<div id="#results" class="results">
+		<button><a href="https://goo.gl/aS7rVC" target="_blank">Code on GitHub</a></button>
+		<button><a href="pdf/calibrate-audience-gaze.pdf" target="_blank">Academic Paper</a></button>
+	</div> -->
 
 	<!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-	<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript">
-		$(document).on('ready', function() {
-		$(".lazy").slick({
-				dots: true,
-				lazyLoad: 'ondemand',
-				infinite: true,
-				arrows: true,
-				// variableWidth: true
-			});
-			$(".vertical-center").slick({
-				dots: true,
-				vertical: true,
-				centerMode: true
-			});
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+    	$(".lazy").slick({
+			lazyLoad: 'ondemand',
+			infinite: true,
+			dots: true,
+			speed: 500,
+			fade: true,
+			cssEase: 'linear'
 		});
-	</script>
-
-	<script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
-	<script type="text/javascript" src="js/retina-1.1.0.js"></script>
-	<script type="text/javascript" src="js/skrollr.min.js"></script>
-	<script type="text/javascript">
-	var s = skrollr.init();
-	</script>
-	<script>
-	$(document).ready(function () {
-	    $('.scrollup').click(function () {
-	        $("html, body").animate({
-	            scrollTop: 0
-	        }, 1200);
-	        return false;
-	    });
-	});
-	</script>
-	<script>
-	  $(document).ready(function() {
-	        $('.showprocess').click(function() {
-	                $('.toggle').slideToggle("slow");
-	        });
-	    });
-	</script>
-
+		$(".vertical-center").slick({
+			dots: true,
+			vertical: true,
+			centerMode: true,
+			infinite: true
+		});
+    });
+</script>
 </body>
 
 </html>
