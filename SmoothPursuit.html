@@ -195,27 +195,55 @@
     </div>
   </section>
 
+	<footer class="colophon">
+		<div class="container" style="margin-top: 50px; margin-bottom: 50px">
+			<div class="row center">
+				<div class="col-xs-12 col-md-2 col-md-push-10 showprocess">
+					<img src="img/viewprocess.png" width="100"/>
+				</div>
+				<div class="col-xs-4 col-md-2 col-md-pull-2">
+					<figure id="#backhome"  width="60" height="60">
+						<a href="index.html"><img src="img/faviconJiayao.png" width="60"/><a/>
+					</figure> 
+				</div>
+				<div class="col-xs-8 col-md-8 col-md-pull-2">
+					<p class="colophon_text"> Work presented by me in 8 weeks | Apr. 2017 <br> Development using C in Visual Studio and Tobii eye tracker, design candidates made in Unity3d <br> Project completed in the course “Research Project in HCI” under the instruction of Antti Oulasvirta</p>
+					<p id="#backtotop" class="scrollup">Back to top ↑</p>  
+				</div>
+			</div>
+		</div>
+	 </footer>
+
 	<!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
-  <script type="text/javascript">
-    $(document).on('ready', function() {
-    	$(".lazy").slick({
-			lazyLoad: 'ondemand',
-			infinite: true,
-			dots: true,
-			speed: 500,
-			fade: true,
-			cssEase: 'linear'
-		});
-		$(".vertical-center").slick({
-			dots: true,
-			vertical: true,
-			centerMode: true,
-			infinite: true
-		});
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	    $(document).on('ready', function() {
+	    	$(".lazy").slick({
+				lazyLoad: 'ondemand',
+				infinite: true,
+				dots: true,
+				speed: 500,
+				fade: true,
+				cssEase: 'linear'
+			});
+			$(".vertical-center").slick({
+				dots: true,
+				vertical: true,
+				centerMode: true,
+				infinite: true
+			});
+	    });
+	</script>
+	<script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
+<script type="text/javascript" src="js/retina-1.1.0.js"></script>
+	<script>
+  $(document).ready(function() {
+        $('.showprocess').click(function() {
+                $('.toggle').slideToggle("slow");
+        });
     });
 </script>
 </body>

@@ -476,17 +476,54 @@ $num-of-slide: 5;
 }
 
 .squishy:active span {
-  -webkit-transform: scale(.95);
-  transform: scale(.95);
+	-webkit-transform: scale(.95);
+	transform: scale(.95);
 }
 
 /* So they don't accidentially highlight btn text */
 a.squishy {
-  cursor: pointer;
-  -webkit-touch-callout: none; 
-  -webkit-user-select: none;
-  -khtml-user-select: none; 
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+	cursor: pointer;
+	-webkit-touch-callout: none; 
+	-webkit-user-select: none;
+	-khtml-user-select: none; 
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.colophon{
+	width:100%;
+	padding:0px;
+	margin:0px;
+}
+.colophon_text{
+	position: relative;
+	float: left;
+	z-index: 3;
+	font-size: 0.8em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #000;
+	line-height:160%;
+	letter-spacing: 0.05em;
+	text-align: left;
+}
+#backtotop{
+	position: relative;
+	float: left;
+	z-index: 3;
+	font-size: 0.7em;
+	font-weight: 300;
+	color: #000;
+	-webkit-font-smoothing: antialiased;	
+	font-family: 'Merriweather', Georgia, "Times New Roman", Times, serif;
+	color: #4f4640;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	vertical-align: text-top;
+	color: #7b7b7b;
+}
+#backtotop:hover{
+	opacity: 0.8;
+	cursor: pointer;
 }
