@@ -1,6 +1,6 @@
 @import 'bourbon';
 /*---- NUMBER OF SLIDE CONFIGURATION ----*/
-$num-of-slide: 2;
+$num-of-slide: 4;
 
 @charset "UTF-8";
 @import "reset.css";
@@ -12,6 +12,7 @@ $num-of-slide: 2;
 .center {
 	margin: auto;
 	text-align: center;
+	vertical-align: middle;
 }
 
 .showprocess {
@@ -232,7 +233,7 @@ $num-of-slide: 2;
 	}
 
 	%bind-background-active-dot {
-	    background: #333;
+	    background: #fff;
 	}
 
 	%bind-opacity-info {
@@ -421,12 +422,23 @@ $num-of-slide: 2;
 	}
 
 .process {
-	display: block;
+	background-color:#2d2e31
 }
+
+	.process p {
+		position: relative;	
+		padding: 0px;
+		z-index: 3;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		color: #cccccc;
+		line-height:160%;
+		display: block;
+	}
 
 /*image carousal*/
 	.slider {
-	    width: 50%;
+	    /*width: 50%;*/
 	    margin: 100px auto;
 	}
 
@@ -441,7 +453,7 @@ $num-of-slide: 2;
 
 	.slick-prev:before,
 	.slick-next:before {
-		color: black;
+		color: white;
 	}
 
 	.slick-slide {
