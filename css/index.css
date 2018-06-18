@@ -225,6 +225,8 @@ th {
 
 
 
+
+
 /* ==========================================================================
    Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the boilerplate and see the unminified code below.
    ========================================================================== */
@@ -1391,7 +1393,7 @@ textarea.w-select {
         position: static
     }
     .w-nav-brand {
-        padding-left: 10px
+        padding-left: 20px
     }
 }
 
@@ -1852,7 +1854,8 @@ textarea.w-select {
     position: relative;
     float: left;
     text-decoration: none;
-    color: #333333
+    color: #333333;
+    padding-left: 20px
 }
 
 .w-nav-link {
@@ -1974,7 +1977,7 @@ textarea.w-select {
         display: block
     }
     .w-nav-brand {
-        padding-left: 10px
+        padding-left: 20px
     }
 }
 
@@ -2067,6 +2070,8 @@ textarea.w-select {
 .w-condition-invisible {
     display: none !important
 }
+
+
 
 
 
@@ -2281,6 +2286,7 @@ a {
     -ms-flex-align: center;
     align-items: center;
     text-align: left;
+    padding-left: 30px;
 }
 
 .logo {
@@ -2300,7 +2306,6 @@ a {
     display: block;
     width: 100%;
     height: 325px;
-    /*height: 100%;*/
     padding: 20px;
     float: none;
     border-style: none;
@@ -2314,10 +2319,6 @@ a {
 
 .tile:hover {
     background-size: cover;
-}
-
-.tile-title{
-
 }
 
 .item {
@@ -3290,6 +3291,9 @@ html.w-mod-js *[data-ix="fade-in-on-scroll"] {
         line-height: 14px;
         text-align: center;
     }
+    .light-h1 {
+        padding-top: 35px;
+    }
     .content {
         margin-left: 0px;
         background-color: #e6e6e6;
@@ -3297,7 +3301,7 @@ html.w-mod-js *[data-ix="fade-in-on-scroll"] {
     .tile {
         position: relative;
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         padding: 0px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -3322,8 +3326,8 @@ html.w-mod-js *[data-ix="fade-in-on-scroll"] {
         height: auto;
         margin-right: 0px;
         margin-left: 0px;
-        padding-top: 15px;
-        padding-bottom: 16px;
+        padding-top: 0px;
+        padding-bottom: 60px;
         opacity: 1;
     }
     .project-image {
