@@ -224,6 +224,10 @@ th {
 
 
 
+
+
+
+
 /* ==========================================================================
    Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the boilerplate and see the unminified code below.
    ========================================================================== */
@@ -2072,6 +2076,10 @@ textarea.w-select {
 
 
 
+
+
+
+
 /* ==========================================================================
    Start of custom Webflow CSS
    ========================================================================== */
@@ -2337,9 +2345,25 @@ a {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: #efefef88;
+    background-color: #efefef;
     opacity: 0;
-    margin-top: -62px;
+    /*margin-top: -62px;*/
+}
+
+.projects-title-image {
+    position: relative;
+    z-index: 2;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: #fff;
+    background-image: url("../img/imgProjects.png");
+    /*width: 100vw;*/
+    height: 20vh;
+    margin: 0px;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    margin: 60px;
 }
 
 .projects {
@@ -2478,6 +2502,7 @@ a {
 .back-arrow {
     position: absolute;
     z-index: 10;
+    padding-top: 7px;
     padding-bottom: 0px;
     -webkit-align-self: flex-start;
     -ms-flex-item-align: start;
@@ -3327,6 +3352,9 @@ html.w-mod-js *[data-ix="fade-in-on-scroll"] {
         padding-bottom: 60px;
         opacity: 1;
     }
+    .projects-title-image {
+        height: 10vh;
+    }
     .project-image {
         margin-top: 10px;
         margin-bottom: 10px;
@@ -3375,6 +3403,9 @@ html.w-mod-js *[data-ix="fade-in-on-scroll"] {
     .hero {
         padding-right: 100px;
         padding-left: 100px;
+    }
+    .projects-title-image {
+        height: 5vh;
     }
     .project-container {
         padding-right: 10px;
