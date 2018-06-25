@@ -228,6 +228,11 @@ th {
 
 
 
+
+
+
+
+
 /* ==========================================================================
    Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the boilerplate and see the unminified code below.
    ========================================================================== */
@@ -2080,6 +2085,11 @@ textarea.w-select {
 
 
 
+
+
+
+
+
 /* ==========================================================================
    Start of custom Webflow CSS
    ========================================================================== */
@@ -2417,7 +2427,35 @@ a {
     color: #000;
 }
 
-.project-hero {
+.a-project-hero {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    background-color: #fff;
+    font-family: Lato, sans-serif;
+    line-height: 45px;
+}
+
+.a-project-hero .project-hero {
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
@@ -3145,6 +3183,32 @@ a {
     text-transform: uppercase;
 }
 
+.a-project-title {
+    color: #000;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-family: Lato, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 50px;
+}
+
+.a-project-subtitle {
+    margin-bottom: 0px;
+    color: #000;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-family: Open Sans, sans-serif;
+}
+
+.a-project-teaser {
+    margin-bottom: 0px;
+    margin-left: 3rem;
+}
+
 .sm-info {
     position: relative;
     display: -webkit-box;
@@ -3365,6 +3429,11 @@ html.w-mod-js *[data-ix="fade-in-on-scroll"] {
         padding-right: 5rem;
         padding-left: 5rem;
     }
+    .a-project-hero {
+        height: 600px;
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
     .project-container.no-top-pad {
         padding-right: 20px;
         padding-bottom: 10px;
@@ -3434,6 +3503,13 @@ html.w-mod-js *[data-ix="fade-in-on-scroll"] {
         padding-left: 10px;
     }
     .project-hero {
+        height: 400px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .a-project-hero {
         height: 400px;
         padding-right: 1rem;
         padding-left: 1rem;
