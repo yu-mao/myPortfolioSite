@@ -539,12 +539,14 @@ ol {
 }
 
 .w-video {
-    width: 100%;
     position: relative;
-    padding: 0
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
 }
 
 .w-video iframe,
+.w-video video,
 .w-video object,
 .w-video embed {
     position: absolute;
