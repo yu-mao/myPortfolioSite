@@ -2457,7 +2457,7 @@ a {
     line-height: 45px;
 }
 
-.a-project-hero .project-hero {
+.project-hero {
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
