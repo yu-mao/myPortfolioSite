@@ -1,1 +1,13 @@
 HSL card reader evaluation: universal design
+Clean code: encapsulate html style ==> css
+attention to UI/UX details
+==============================================
+EfH
+------
+Adjust demo gif size
+==============================================
+EventMap
+---------
+Change project-hero [width: 60%] to [w-row w-col w-col-6]
+Add physical interaction prototype reflection
+==============================================
