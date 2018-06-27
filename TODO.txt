@@ -5,6 +5,7 @@ attention to UI/UX details
 EfH
 ------
 Adjust demo gif size
+theory - one-sentence tangible example
 ==============================================
 EventMap
 ---------
