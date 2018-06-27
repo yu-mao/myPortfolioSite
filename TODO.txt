@@ -11,3 +11,7 @@ EventMap
 Change project-hero [width: 60%] to [w-row w-col w-col-6]
 Add physical interaction prototype reflection
 ==============================================
+Google analytics
+-----------------
+audience --> technology --> network
+audience --> users flow
