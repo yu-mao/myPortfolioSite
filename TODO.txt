@@ -1,4 +1,4 @@
-Portfolio¸Ä³Éone-page£¬¼õÉÙdepth
+add pre-loading animation
 
 ================================================
 HSL card reader evaluation: universal design
