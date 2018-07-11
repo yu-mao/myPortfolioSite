@@ -41,7 +41,9 @@
 
     ga('create', 'UA-121306132-1', 'auto');
     ga('send', 'pageview', location.pathname);
-    ga('send', 'event', 'Pdfs', 'view', 'CV View');
+    ga('send', 'event', 'Outbound Link', 'click', event.target.href);
+    ga('send', 'event', 'Downloads', 'PDF', "CV Downloaded");
+
     </script>
     <!-- End Google Analytics -->
 </head>
