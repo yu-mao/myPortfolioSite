@@ -41,6 +41,7 @@
 
     ga('create', 'UA-121306132-1', 'auto');
     ga('send', 'pageview', location.pathname);
+    ga('send', 'event', 'Pdfs', 'view', 'CV View');
     </script>
     <!-- End Google Analytics -->
 </head>
@@ -116,7 +117,7 @@
                         <br>
                         <br>
                     </p>
-                    <p><em>Find my <a href="pdf/JiayaoYu.CV.pdf" target="_blank">CV</a> and elsewhere:</em></p>
+                    <p><em>Find my <a href="pdf/JiayaoYu.CV.pdf" target="_blank" onclick="_gaq.push(['_trackEvent','Download','PDF',this.href]);">CV</a> and elsewhere:</em></p>
                     <p><a href="https://www.linkedin.com/in/jiayaoyu/?locale=en_US" target="_blank">LinkedIN</a> | <a href="https://www.behance.net/yjybxx2fyb5ef" target="_blank">Behance</a> | <a href="https://github.com/avaniyu" target="_blank">GitHub</a>| <a href="https://www.flickr.com/photos/142511877@N04/albums" target="_blank">Flickr</a></p>
                 </div>
                 <div class="about-row w-row" data-ix="fade-in-on-scroll">
