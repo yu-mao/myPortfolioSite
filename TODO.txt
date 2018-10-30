@@ -1,9 +1,9 @@
 add pre-loading animation
+add header as a stand-alone base class
+add CV download/click tracking
 
 ================================================
-HSL card reader evaluation: universal design
-Clean code: encapsulate html style ==> css
-attention to UI/UX details
+
 ==============================================
 EfH
 ------
@@ -12,16 +12,5 @@ theory - one-sentence tangible example
 ==============================================
 EventMap
 ---------
-Change project-hero [width: 60%] to [w-row w-col w-col-6]
 Add physical interaction prototype reflection
 ==============================================
-Google analytics
------------------
-audience --> technology --> network
-audience --> users flow
-
-==================
-media content production
-----
-<Media Youth>
-One for Old
