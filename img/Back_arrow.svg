@@ -1,1 +1,5 @@
-<svg version="1.1" viewBox="0.0 0.0 200.0 200.0" fill="none" stroke="none" stroke-linecap="square" stroke-miterlimit="10" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><clipPath id="p.0"><path d="m0 0l200.0 0l0 200.0l-200.0 0l0 -200.0z" clip-rule="nonzero"/></clipPath><g clip-path="url(#p.0)"><path fill="#000000" fill-opacity="0.0" d="m0 0l200.0 0l0 200.0l-200.0 0z" fill-rule="evenodd"/><path fill="#666666" d="m56.05799 99.9904l70.95241 -71.9613l16.912819 0l-70.95241 71.9613z" fill-rule="evenodd"/><path fill="#666666" d="m143.92322 171.9517l-70.95241 -71.9613l-16.912819 0l70.95241 71.9613z" fill-rule="evenodd"/></g></svg>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="200" height="200" fill="white"/>
+<rect x="130.361" y="28" width="15.5419" height="101.022" rx="7.77093" transform="rotate(44.9422 130.361 28)" fill="#666666"/>
+<rect width="15.5419" height="101.022" rx="7.77093" transform="matrix(0.707819 -0.706393 -0.706393 -0.707819 130.361 171.484)" fill="#666666"/>
+</svg>
