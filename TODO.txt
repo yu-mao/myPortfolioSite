@@ -3,9 +3,13 @@ add header as a stand-alone base class
 add CV download/click tracking
 
 ================================================
-all the page should be responsive
+all the page should be responsive, especially project-hero
 
 
+==============================================
+GazeTyping
+-----------
+expanded accordion sticks to top
 ==============================================
 EfH
 ------
