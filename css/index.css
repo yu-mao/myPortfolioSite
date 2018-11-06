@@ -678,8 +678,7 @@ div.accordion-panel {
 
 div.accordion-panel.show{
     opacity: 1;
-    max-height: 1600px;
-    /*height: 10vh;*/
+    max-height: 3000px;
 }
 
 .w-select {
