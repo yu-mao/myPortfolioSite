@@ -1,7 +1,8 @@
 add pre-loading animation
 add header as a stand-alone base class
 add CV download/click tracking
-
+some visual details
+各Project一定要醒目banner凸出deliverable
 ================================================
 all the page should be responsive, especially project-hero
 
@@ -9,8 +10,16 @@ all the page should be responsive, especially project-hero
 ==============================================
 GazeTyping
 -----------
+tag: HCI research, C#/.NET dev, user test,
 expanded accordion sticks to top
+把我的deliverable挪前面，凸出
 ==============================================
+WebRTC dashboard
+------------------
+visually professional teaser， banner
+
+==============================================
+
 EfH
 ------
 Adjust demo gif size
