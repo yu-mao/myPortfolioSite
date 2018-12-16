@@ -1,3 +1,30 @@
+all the projects (有详有略，引导reader注意到highlight内容)
+-----------------------
+凸出deliverables
+research (research thinking, dev 能力，data analysis能力)
+prototype/design (design thinking, dev/proto能力)
+
+index就放七个proj：
+---------------------
+gaze-typing keyboard
+Downdate Beijing
+WebRTC dashboard
+EventMap
+EfH
+HSL evaluation
+neighborhood car
+
+其他proj通过works I've done的hyperlink access：
+------------------------------------------------
+chariUp
+HSL evaluation, trafficSesne evaluation
+Press webpage, BillPie
+homeSeek
+Comp UI design 专题
+
+
+
+
 add pre-loading animation
 add header as a stand-alone base class
 add CV download/click tracking
