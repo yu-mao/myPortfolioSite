@@ -6,10 +6,10 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 :root {
-    --color1: #DE5B49;
-    --color2: #F0CA4D;
-    --color3: #324D5C;
-    --color4: #46B29D;
+    --color1: #DE5B49;  /*red*/
+    --color2: #F0CA4D;  /*yellow*/
+    --color3: #324D5C;  /*navy blue*/
+    --color4: #46B29D;  /*light blue*/
 }
 
 html {
