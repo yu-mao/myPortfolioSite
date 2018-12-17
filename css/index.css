@@ -2107,17 +2107,6 @@ div.accordion-panel.show{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Start of custom Webflow CSS
    ========================================================================== */
@@ -2129,7 +2118,7 @@ body {
     color: #888;
     font-size: 20px;
     line-height: 32px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.5px;
 }
 
@@ -2595,9 +2584,10 @@ a {
 
 .about-img {
     height: 600px;
+    /*margin-top: 3%;*/
     margin-bottom: 0px;
     background-color: white;
-    background-image: url("../img/profileTmp.png");
+    background-image: url("../img/about-image.png");
     background-position: 50% 50%;
     background-size: cover;
 }
@@ -3034,7 +3024,7 @@ h1.hero-type{
     flex: 0 0 100%;
     font-size: 30px;
     line-height: 36px;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     align-self: flex-end;
 }

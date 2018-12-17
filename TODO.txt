@@ -1,8 +1,6 @@
 Adrian建议
 -----------
-1.改intro部分文字
 2.project teaser more like a clickable link
-3. divider beween work and about
 4. project: neighborhoodCar needs a title
 5. in each project, "previous project" + "next project"
 6. in each project, hightlight: the problem, the deliverable/skills
