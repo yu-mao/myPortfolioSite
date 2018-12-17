@@ -2445,31 +2445,46 @@ a {
 }
 
 .a-project-hero {
-    position: relative;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100%;
-    padding-left: 20rem;
-    padding-right: 20rem;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
+    height: 600px;
+    display: grid;
     justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    color: #fff;
-    background-color: #fff;
-    font-family: Lato, sans-serif;
-    line-height: 45px;
+    align-content: center;
+    padding: 0 10% 0 10%;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 40% 60%;
+    grid-column-gap: 20px;
+}
+
+.a-project-hero-title {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+    justify-self: start;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: left;
+    max-width: 600px;
+    color: #000;
+}
+
+.a-project-hero-subtitle {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: start;
+    justify-self: start;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 36px;
+    text-align: left;
+    max-width: 900px;
+}
+
+.a-project-hero-teaser {
+    grid-column: 2;
+    grid-row: 1/4;
+    align-self: center;
+    justify-self: center;
 }
 
 .project-hero {
@@ -2494,7 +2509,7 @@ a {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    font-family: Merriweather, serif;
+    font-family: Lato, serif;
     color: #fff;
     font-size: 24px;
     line-height: 38px;
@@ -3216,7 +3231,7 @@ h2.hero-type{
     text-transform: uppercase;
 }
 
-.a-project-title {
+/*.a-project-title {
     color: #000;
     font-weight: 400;
     text-align: center;
@@ -3225,9 +3240,9 @@ h2.hero-type{
     font-size: 50px;
     line-height: 50px;
     margin-bottom: 50px;
-}
+}*/
 
-.a-project-subtitle {
+/*.a-project-subtitle {
     margin-bottom: 0px;
     color: #000;
     font-size: 30px;
@@ -3235,12 +3250,12 @@ h2.hero-type{
     text-align: center;
     letter-spacing: 1.5px;
     font-family: Open Sans, sans-serif;
-}
+}*/
 
-.a-project-teaser {
+/*.a-project-teaser {
     margin-bottom: 0px;
     margin-left: 3rem;
-}
+}*/
 
 .sm-info {
     position: relative;
@@ -3458,12 +3473,10 @@ html.w-mod-js *[data-ix="fade-in-on-scroll"] {
         margin-bottom: 10px;
     }
     .project-hero {
-        height: 600px;
         padding-right: 5rem;
         padding-left: 5rem;
     }
     .a-project-hero {
-        height: 600px;
         padding-right: 5rem;
         padding-left: 5rem;
     }
@@ -3552,8 +3565,16 @@ html.w-mod-js *[data-ix="fade-in-on-scroll"] {
         height: 400px;
         padding-right: 1rem;
         padding-left: 1rem;
-        font-size: 16px;
+        grid-template-columns: 40% 40%;
+        grid-column-gap: 1rem;
+    }
+    .a-project-hero-title {
+        font-size: 20px;
         line-height: 28px;
+    }
+    .a-project-hero-subtitle {
+        font-size: 16px;
+        line-height: 24px;
     }
     .project-container.no-top-pad {
         padding-right: 10px;
