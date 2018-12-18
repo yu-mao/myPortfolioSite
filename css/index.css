@@ -651,7 +651,6 @@ button.accordion {
     height: 10vw;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-color: #eee;
     color: rgba(0,0,0,0);
     cursor: pointer;
     width: 100%;
@@ -661,7 +660,7 @@ button.accordion {
 }
 
 button.accordion.active, button.accordion:hover {
-    background-color: #ddd;
+    background-color: #008759;
     transition: 0.2s ease-in-out;
 }
 
@@ -2183,7 +2182,7 @@ a {
     padding-bottom: 5px;
     border-style: none none solid;
     border-bottom-width: 1px;
-    border-bottom-color: var(--color3);
+    border-bottom-color: var(--color1);
     color: #000;
     text-decoration: none;
 }
@@ -3184,7 +3183,6 @@ h2.hero-type{
     -ms-flex-align: center;
     align-items: center;
     border-bottom-style: none;
-    /*background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/example-bg.png");*/
     background-position: 50% 50%;
     background-size: cover;
 }
@@ -3230,32 +3228,6 @@ h2.hero-type{
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
-
-/*.a-project-title {
-    color: #000;
-    font-weight: 400;
-    text-align: center;
-    letter-spacing: 1.5px;
-    font-family: Lato, sans-serif;
-    font-size: 50px;
-    line-height: 50px;
-    margin-bottom: 50px;
-}*/
-
-/*.a-project-subtitle {
-    margin-bottom: 0px;
-    color: #000;
-    font-size: 30px;
-    font-weight: 300;
-    text-align: center;
-    letter-spacing: 1.5px;
-    font-family: Open Sans, sans-serif;
-}*/
-
-/*.a-project-teaser {
-    margin-bottom: 0px;
-    margin-left: 3rem;
-}*/
 
 .sm-info {
     position: relative;
@@ -3310,19 +3282,15 @@ h2.hero-type{
     text-align: left;
 }
 
-.submit-button {
-    padding-right: 30px;
-    padding-left: 30px;
-    border-style: none;
-    border-top-width: 1px;
-    border-top-color: var(--color1);
-    border-radius: 2px;
-    background-color: var(--color1);
-    color: var(--color2);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 3.5px;
-    text-transform: uppercase;
+.expand-button {
+    background-color: transparent;
+    -webkit-transition: opacity 500ms ease;
+    transition: opacity 500ms ease;
+    opacity: 0.7;
+}
+
+.expand-button:hover {
+    opacity: 1;
 }
 
 .nike-hero {
@@ -3477,8 +3445,8 @@ html.w-mod-js *[data-ix="fade-in-on-scroll"] {
         padding-left: 5rem;
     }
     .a-project-hero {
-        padding-right: 5rem;
-        padding-left: 5rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
     .project-container.no-top-pad {
         padding-right: 20px;
@@ -3536,6 +3504,10 @@ html.w-mod-js *[data-ix="fade-in-on-scroll"] {
     .white-outline {
         border-style: none;
     }
+    .expand-button {
+        font-size: 12px;
+        font-weight: 400;
+    }
 }
 
 @media (max-width: 479px) {
@@ -3563,8 +3535,6 @@ html.w-mod-js *[data-ix="fade-in-on-scroll"] {
     }
     .a-project-hero {
         height: 400px;
-        padding-right: 1rem;
-        padding-left: 1rem;
         grid-template-columns: 40% 40%;
         grid-column-gap: 1rem;
     }
@@ -3611,5 +3581,8 @@ html.w-mod-js *[data-ix="fade-in-on-scroll"] {
     }
     .project-close {
         height: 400px;
+    }
+    .expand-button {
+        display: none;
     }
 }
