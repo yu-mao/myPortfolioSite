@@ -2540,6 +2540,12 @@ a {
     margin-bottom: 10px;
 }
 
+.process {
+    position: fixed;
+    bottom: 0;
+    width: 4000px;
+}
+
 .project-nav {
     position: fixed;
     left: 0px;
