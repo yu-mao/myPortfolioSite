@@ -58,7 +58,8 @@ GazeTyping
 -----------
 tag: HCI research, C#/.NET dev, user test,
 expanded accordion sticks to top
-把我的deliverable挪前面，凸出
+horizontally scrollable Process
+expandable DesignSpaceAnalysis
 ==============================================
 WebRTC dashboard
 ------------------
