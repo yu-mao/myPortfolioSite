@@ -56,10 +56,7 @@ all the page should be responsive, especially project-hero
 ==============================================
 GazeTyping
 -----------
-tag: HCI research, C#/.NET dev, user test,
 expanded accordion sticks to top
-horizontally scrollable Process
-expandable DesignSpaceAnalysis
 ==============================================
 WebRTC dashboard
 ------------------
@@ -69,8 +66,10 @@ visually professional teaser£¬ banner
 
 EfH
 ------
-Adjust demo gif size
-theory - one-sentence tangible example
+Intro pic
+Background pic
+demo gif: make it smaller, slider more noticable & associated theory title
+theory - one-sentence tangible example, total width
 ==============================================
 EventMap
 ---------
