@@ -1,5 +1,6 @@
 add
 -------
+responsiveness of the whole website
 user-centered design solution (UX:user flow development, information architecture, wireframe delivery, competitor benchmarking, user testing / research)
 
 
