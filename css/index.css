@@ -2727,8 +2727,8 @@ a {
 }
 
 .slide-image {
-    /*background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/example-bg.png");*/
-    background-position: 50% 50%;
+    /*background-position: 50% 50%;*/
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
