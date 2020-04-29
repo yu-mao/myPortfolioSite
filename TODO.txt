@@ -5,8 +5,6 @@ user-centered design solution (UX:user flow development, information architectur
 
 
 
-
-
 Adrian建议
 -----------
 2.project teaser more like a clickable link
@@ -14,8 +12,6 @@ Adrian建议
 5. in each project, "previous project" + "next project"
 6. in each project, hightlight: the problem, the deliverable/skills
 7. fonts weight are too less, hard to read
-
-
 
 
 all the projects (有详有略，引导reader注意到highlight内容)
@@ -41,8 +37,6 @@ HSL evaluation, trafficSesne evaluation
 Press webpage, BillPie
 homeSeek
 Comp UI design 专题
-
-
 
 
 add pre-loading animation
