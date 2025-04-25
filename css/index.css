@@ -2635,6 +2635,18 @@ a {
     opacity: 0.4;
 }
 
+.division {
+    height: 160px;
+    background-image: url("../img/Division_Line.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    align-items: center;
+    font-family: Lato, serif;
+    color: #fff;
+    font-size: 24px;
+    padding: 60px;
+}
+
 .about-img {
     height: 600px;
     /*margin-top: 3%;*/
