@@ -2639,8 +2639,9 @@ a {
     background-position: 50% 50%;
     background-size: cover;
     align-items: center;
-    padding-top: 60px;
-    padding-bottom: 20px;
+    padding: 60px;
+/*    padding-top: 60px;
+    padding-bottom: 20px;*/
 }
 
 h1.division-title{
