@@ -2214,6 +2214,15 @@ a {
     text-decoration: none;
 }
 
+.slide-text{
+    display: inline-block;
+    transition: transform 400ms ease;
+}
+
+.slide-text:hover {
+    transform: translateX(8px);
+}
+
 .nav {
     position: fixed;
     left: 0px;
