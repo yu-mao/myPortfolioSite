@@ -2361,36 +2361,41 @@ a {
     border-style: none;
 }
 
+.item {
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
 .tile {
+    position: relative;
     display: block;
     width: 100%;
     height: 325px;
-    padding: 20px;
+    padding: 20px 20%;
     float: none;
     border-style: none;
-    /*background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/example-bg.png");*/
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
+    text-align: center;
+    color: white;
 }
 
 .tile:hover {
     background-size: cover;
 }
 
-.item {
-    margin-bottom: 0px;
-    padding: 0px;
-}
-
 .overlay {
-    position: relative;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
     z-index: 1;
     display: block;
     height: 100%;
-    padding: 20px;
+    padding: 20px 20%;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -2402,7 +2407,6 @@ a {
     background-color: rgb(255, 255, 255, 0.8);
     opacity: 0;
     color: black;
-    /*margin-top: -62px;*/
 }
 
 .projects-title-image {
